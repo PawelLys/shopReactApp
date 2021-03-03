@@ -10,6 +10,10 @@ export const Container = styled.div`
   position: relative;
   cursor: pointer;
 
+  @media (max-width: 380px) {
+    width: 250px;
+  }
+
   @media (max-width: 990px) and (min-width: 750px) {
     width: 600px;
     height: 400px;

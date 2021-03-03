@@ -212,7 +212,11 @@ export const InputPasswordRemainderInfo = styled.div`
 `;
 
 export const ReturnBtnWrapper = styled.div`
-  margin-top: 3rem;
+  margin: 3rem auto 0;
+
+  @media (max-width: 520px) {
+    margin-left: 0;
+  }
 `;
 
 export const ReturnBtn = styled.button`
@@ -226,6 +230,7 @@ export const ReturnBtn = styled.button`
   padding: 0.5rem 1.5rem;
   border: none;
   border-radius: 666px;
+  margin-left: -14rem;
 
   :focus {
     outline: none;
@@ -233,6 +238,10 @@ export const ReturnBtn = styled.button`
 
   :hover {
     background-color: rgb(235, 235, 235);
+  }
+
+  @media (max-width: 520px) {
+    margin-left: 0;
   }
 `;
 
